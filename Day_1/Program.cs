@@ -2,7 +2,7 @@
 
 
 //sample input
-int[] input = File.ReadAllLines("C:\\Users\\e378599\\Desktop\\input.txt").Select(input => int.Parse(input)).ToArray();
+int[] input = File.ReadAllLines("day1_part1_input.txt").Select(input => int.Parse(input)).ToArray();
 
 int numIncreases = 0;
 
