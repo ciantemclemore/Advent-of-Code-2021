@@ -48,14 +48,17 @@ static Dictionary<int, int> ParsePart2Input(string[] input)
         {
             output.Add(i, int.Parse(input[i]));
 
+            //get the value
+            int value = int.Parse(input[i]);
+
             if (i == 1)
             {
-                output[i - 1] += int.Parse(input[i]);
+                output[i - 1] += value;
             } 
             else if (i > 1) 
             {
-                output[i - 1] += int.Parse(input[i]);
-                output[i - 2] += int.Parse(input[i]);
+                output[i - 1] += value;
+                output[i - 2] += value;
             }
         }
     }
